@@ -79,6 +79,7 @@ trackableObjects = {}
 totalFrames = 0
 totalDown = 0
 totalUp = 0
+j=0
 
 # start the frames per second throughput estimator
 fps = FPS().start()
@@ -224,6 +225,8 @@ while True:
 				if direction < 0 and centroid[1] < H // 2:
 					totalUp += 1
 					to.counted = True
+					j +=1
+					cv2.imwrite(filename='output/image/img_' + str(j) + '.jpg', img=frame)
 
 				# if the direction is positive (indicating the object
 				# is moving down) AND the centroid is below the
@@ -231,6 +234,8 @@ while True:
 				elif direction > 0 and centroid[1] > H // 2:
 					totalDown += 1
 					to.counted = True
+					j += 1
+					cv2.imwrite(filename='output/image/img_' + str(j) + '.jpg', img=frame)
 
 		# store the trackable object in our dictionary
 		trackableObjects[objectID] = to
