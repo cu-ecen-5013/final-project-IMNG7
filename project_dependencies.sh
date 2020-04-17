@@ -17,3 +17,4 @@ pip install --upgrade imutils
 pip3 install matplotlib
 pip install argparse
 pip install opencv-contrib-python
+pip install scipy
