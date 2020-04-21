@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_LDD
+        bool "LDD"
+        help
+          Includes the Driver Development rules and builds.
