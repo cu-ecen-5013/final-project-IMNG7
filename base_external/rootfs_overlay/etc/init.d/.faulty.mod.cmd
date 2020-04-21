@@ -1,0 +1,1 @@
+cmd_/home/nitik/Assignment/assignment-4-buildroot-IMNG7/base_external/rootfs_overlay/etc/init.d/faulty.mod := { echo  /home/nitik/Assignment/assignment-4-buildroot-IMNG7/base_external/rootfs_overlay/etc/init.d/faulty.o; echo; } > /home/nitik/Assignment/assignment-4-buildroot-IMNG7/base_external/rootfs_overlay/etc/init.d/faulty.mod
